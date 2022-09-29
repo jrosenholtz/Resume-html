@@ -1,0 +1,24 @@
+* {
+	background-color: #121211;
+	font-family: system-ui;
+	text-align: center;
+	color: white;
+}
+
+#top {
+	text-align: center;
+}
+
+#subtitle {
+	text-align: center;
+}
+
+img { padding: 50; margin: 0; } 
+  
+#footer {
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 50%
+	height: 2.5rem;
+}

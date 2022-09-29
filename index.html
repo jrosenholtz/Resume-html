@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="index.css" /> 
+<div class="title">
+  <br><br>
+  <h1 id="top">Hi!</h1>
+  <h2 id="subtitle">Thanks for visiting my webpage. Please follow the links below to find my resume, linkedin, and github.
+</h2>
+<br>
+<h3 id="links"><a href="https://www.linkedin.com"><img src="images/LI-In-Bug.png"width="64"</a>
+<a href="https://github.com/"><img src="images/GitHub-Mark-Light-64px.png" width="64"</a>
+<a href="resume.html"><img src="images/icons8-resume-80.png" width="64"></a>
+</h3>
+<h4>Visitor Counter:
+<div id="CounterVisitor">
+</div>
+</h4>
+<footer>
+	<p id="footer"><a href="mailto:your@email.com">your@email.com</a></p>
+</footer>
+</div>
+<script>
+var n = localStorage.getItem('on_load_counter');
+
+if (n === null) {
+  n = 0;
+}
+n++;
+
+localStorage.setItem("on_load_counter", n);
+
+nums = n.toString().split('').map(Number);
+document.getElementById('CounterVisitor').innerHTML = '';
+for (var i of nums) {
+  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+}
+
+</script>
